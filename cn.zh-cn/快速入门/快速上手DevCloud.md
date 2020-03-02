@@ -1,6 +1,6 @@
 # **快速上手DevCloud**<a name="devcloud_qs_1000"></a>
 
-本节为您介绍软件开发平台（DevCloud）的基本操作流程，帮助您快速上手DevCloud。
+本节为您介绍华为云软件开发平台（DevCloud）的基本操作流程，帮助您快速上手DevCloud。
 
 ![](figures/基本操作流程.png)
 
