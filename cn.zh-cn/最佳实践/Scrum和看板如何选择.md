@@ -1,4 +1,4 @@
-# **Scrum和看板如何选择**<a name="ZH-CN_TOPIC_0224560780"></a>
+# **Scrum和看板如何选择**<a name="devcloud_practice_3001"></a>
 
 ## **背景**<a name="section12861125482018"></a>
 
