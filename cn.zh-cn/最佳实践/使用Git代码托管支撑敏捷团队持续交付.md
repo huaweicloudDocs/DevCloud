@@ -20,7 +20,25 @@
 
     ![](figures/07-代码托管-02.png)
 
-      
+    >![](public_sys-resources/icon-note.gif) **说明：**   
+    >若您的项目不在华北-北京一、华北-北京四、华东-大连三个区域，则您的界面中无法看到图标![](figures/icon-使用CloudIDE打开代码仓库.png)。  
+    >此时需要通过以下方式进入CloudIDE：  
+    >1.  登录[CloudIDE](https://devcloud.huaweicloud.com/cloudide/home)，在“免费体验“页签单击“All in One“下的“免费体验“，申请60分钟的免费体验实例。  
+    >    ![](figures/07-代码托管-21.png)  
+    >        
+    >2.  待CloudIDE加载完毕后（由于免费体验，等待时长可能较长），将代码切换至本项目当中的代码仓库。切换方式有HTTPS与SSH两种：  
+    >    1.  **HTTPS方式**：  
+    >        首先在DevCloud代码托管服务中[ 配置HTTPS密码](#li19889457363)，  
+    >        然后返回CloudIDE中[导入工程](https://support.huaweicloud.com/usermanual-cloudide/import_projects.html)。导入工程时注意**Url为项目的HTTPS地址**，且需要将HTTPS用户名与密码输入User和Password。  
+    >        ![](figures/07-代码托管-22.png)  
+    >            
+    >    2.  **SSH方式**：  
+    >        首先在CloudIDE中[打开Terminal](https://support.huaweicloud.com/usermanual-cloudide/terminal.html)，在Terminal中输入下面命令显示密钥，手工复制密钥。  
+    >        ```  
+    >        cat ~/.ssh/id_rsa.pub  
+    >        ```  
+    >        然后进入DevCloud代码托管服务，单击“设置我的SSH密钥  \>  添加SSH密钥“，将复制的密钥粘贴在相应位置并保存。  
+    >        最后返回CloudIDE中[导入工程](https://support.huaweicloud.com/usermanual-cloudide/import_projects.html)，注意**Url为项目的SSH地址**，此时无需输入User和Password。  
 
 3.  等待CloudIDE加载完毕。
 
@@ -62,9 +80,9 @@
 
 在本节中，您将学习如何创建，克隆和推送Git存储库，并将本地修改同步到**代码托管**服务中。
 
-在进行操作前，首先通过[Git官网](https://git-scm.com/download/win)下载安装包，并使用默认配置安装Git客户端到本地电脑。
+在进行操作前，首先通过[开源镜像站](https://mirrors.huaweicloud.com/)\>[Git-for-Windows](https://mirrors.huaweicloud.com/git-for-windows/)下载安装包，并使用默认配置安装Git客户端到本地电脑。
 
--   **配置HTTPS密码**
+-   <a name="li19889457363"></a>**配置HTTPS密码**
     1.  进入项目，单击页面上方导航“代码  \>  代码托管“，进入代码托管服务。
     2.  单击“设置我的HTTPS密码“，进入“HTTPS密码管理“页面。
     3.  初次设置时，单击“自行设置密码“。
@@ -162,7 +180,7 @@ Hi 兄弟们：
 
 
 -   **创建分支并进行新功能开发**
-    1.  进入代码仓库。选择“分支“页签，单击新建分支，在弹框中输入分支名称，单击“确定“保存。
+    1.  进入代码仓库。选择“分支“页签，单击“新建分支“，在弹框中输入分支名称，单击“确定“保存。
 
         ![](figures/07-代码托管-10.png)
 

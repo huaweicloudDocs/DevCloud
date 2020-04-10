@@ -143,24 +143,24 @@
 
 
 -   **安装Docker以及Python**
-    1.  登录[弹性云服务器ECS官网](https://www.huaweicloud.com/product/ecs.html)，单击“立即购买“，进入弹性云服务器控制台。
+    1.  登录[弹性云服务器控制台](https://console.huaweicloud.com/ecm/?region=&locale=zh-cn#/ecs/manager/vmList)，查看云主机列表。
     2.  登录云主机：
+        -   控制台登录（推荐）：在列表中单击“远程登录“，打开云主机。
 
-        -   在列表中单击“远程登录“，打开云主机。
+            输入用户名“root“，及在[ 购买ECS主机](#li1196412555335)中设置的密码，登录云主机。
 
-            输入用户名“root“，及在[ 购买ECS主机](#li1196412555335)中设置的密码，登录云主机
+            ![](figures/10-ECS部署-01.png)
+
+              
+
+            >![](public_sys-resources/icon-note.gif) **说明：**   
+            >输入密码的过程不会有字符增加的显示，当密码输入完毕后，输入回车即可登录。  
 
         -   使用ssh方式登录远程主机（可选）：使用命令行或者Xshell等工具输入以下指令并登录。
 
             ```
             ssh root@主机IP地址
             ```
-
-            IP地址通过单击列表中图标获取。
-
-        ![](figures/10-ECS部署-01.png)
-
-          
 
     3.  执行以下命令，安装运行程序所需的依赖工具“Python\\Docker\\Docker-Compose“。
 
@@ -202,7 +202,7 @@
 
 ## **02.使用自动化部署实现一键部署**<a name="section13226643184211"></a>
 
-通过本节，您将学习如何学**部署**服务结合**弹性云服务器ECS**，完成应用的自动化部署。
+通过本节，您将学习如何使用**部署**服务结合**弹性云服务器ECS**，完成应用的自动化部署。
 
 -   <a name="li1079619123430"></a>**添加授信主机**
     1.  进入项目，单击页面上方导航“设置  \>  通用设置“。
@@ -216,7 +216,11 @@
 
     3.  单击“添加主机“，在弹框中输入刚刚购买的ECS主机信息，单击“添加“保存。
 
-        当出现以下提示时，表示主机添加成功。若主机添加失败，请参考[部署-常见问题-主机问题](https://support.huaweicloud.com/deployman_faq/deployman_faq_0000.html)排查。
+        ![](figures/10-ECS部署-13.png)
+
+          
+
+    4.  当出现以下提示时，表示主机添加成功。若主机添加失败，请参考[部署-常见问题-主机问题](https://support.huaweicloud.com/deployman_faq/deployman_faq_0000.html)排查。
 
         ![](figures/10-ECS部署-06.png)
 
@@ -266,16 +270,57 @@
 
         系统自动跳转至“部署详情“页面，可以查看任务执行进展。
 
-        当出现以下页面时，表示任务执行成功。若任务执行失败，请参照[部署-常见问题-任务步骤问题](https://support.huaweicloud.com/deployman_faq/deployman_faq_1017.html)排查。
+        当出现以下页面时，表示任务执行成功。
 
         ![](figures/10-ECS部署-09.png)
+
+          
+
+        若任务执行失败，请根据报错信息，参考下面步骤排查。
+
+          
+
+    6.  部署异常情况排查
+
+        <a name="table18278224822"></a>
+        <table><thead align="left"><tr id="row1927811241629"><th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.1.4.1.1"><p id="p1627815247218"><a name="p1627815247218"></a><a name="p1627815247218"></a><strong id="b55691335721"><a name="b55691335721"></a><a name="b55691335721"></a>提示信息</strong></p>
+        </th>
+        <th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.1.4.1.2"><p id="p1427812241621"><a name="p1427812241621"></a><a name="p1427812241621"></a><strong id="b4950200032"><a name="b4950200032"></a><a name="b4950200032"></a>报错原因</strong></p>
+        </th>
+        <th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.1.4.1.3"><p id="p42786244212"><a name="p42786244212"></a><a name="p42786244212"></a><strong id="b1995110011319"><a name="b1995110011319"></a><a name="b1995110011319"></a>解决方法</strong></p>
+        </th>
+        </tr>
+        </thead>
+        <tbody><tr id="row202785241327"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p82781024221"><a name="p82781024221"></a><a name="p82781024221"></a>docker command not found</p>
+        </td>
+        <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p15278122411219"><a name="p15278122411219"></a><a name="p15278122411219"></a>远程云主机的依赖缺失。</p>
+        </td>
+        <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p152787249215"><a name="p152787249215"></a><a name="p152787249215"></a>检查远程云主机的依赖是否安装成功。</p>
+        </td>
+        </tr>
+        <tr id="row127819240219"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p19278524727"><a name="p19278524727"></a><a name="p19278524727"></a>docker login failed</p>
+        </td>
+        <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p027813241629"><a name="p027813241629"></a><a name="p027813241629"></a>docker 登录失败。</p>
+        </td>
+        <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><a name="ol1222221812414"></a><a name="ol1222221812414"></a><ol id="ol1222221812414"><li>检查构建任务及部署任务的参数是否正确。</li><li>docker login指令过期，重新获取</li></ol>
+        </td>
+        </tr>
+        <tr id="row1827919244219"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p22792247212"><a name="p22792247212"></a><a name="p22792247212"></a>Get <em id="i872119493316"><a name="i872119493316"></a><a name="i872119493316"></a>https://XXX</em> denied</p>
+        </td>
+        <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p52791724129"><a name="p52791724129"></a><a name="p52791724129"></a>获取镜像被拒绝</p>
+        </td>
+        <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><a name="ol1476951253"></a><a name="ol1476951253"></a><ol id="ol1476951253"><li>进入SWR中查看构建任务产生的镜像是否存在。</li><li>docker login指令过期，重新获取。 |</li></ol>
+        </td>
+        </tr>
+        </tbody>
+        </table>
 
           
 
 
 
 -   ****验证部署结果****
-    1.  打开浏览器，输入“http://ip:5001“，打开管理端UI。
+    1.  打开浏览器，输入“http://ip:5001“，打开管理端UI，其中ip为ECS的IP地址。
 
         此时，页面中的图表显示为空白。
 
@@ -283,7 +328,7 @@
 
           
 
-    2.  打开另一个浏览器页面，输入“http://ip:5000“，打开用户端UI。
+    2.  打开另一个浏览器页面，输入“http://ip:5000“，打开用户端UI，其中ip为ECS的IP地址。
 
         下拉网页，找到产品“空气滤芯“，单击该产品下方的“LIKE“。
 

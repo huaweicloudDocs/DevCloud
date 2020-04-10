@@ -8,8 +8,8 @@
 
 -   **购买Kubernetes集群**
     1.  登录[云容器引擎CCE官网](https://www.huaweicloud.com/product/cce.html)，单击“立即使用“，进入云容器引擎控制台。
-    2.  单击页面右上角“购买Kubernetes集群“，
-    3.  参照以下配置购买云主机，列表中未涉及的配置保持默认值。
+    2.  单击页面右上角“购买Kubernetes集群“。
+    3.  参照以下配置购买集群，列表中未涉及的配置保持默认值。
 
         <a name="table4383935114417"></a>
         <table><thead align="left"><tr id="row93831035154415"><th class="cellrowborder" valign="top" width="15%" id="mcps1.1.4.1.1"><p id="p7383635154416"><a name="p7383635154416"></a><a name="p7383635154416"></a><strong id="b777995394412"><a name="b777995394412"></a><a name="b777995394412"></a>配置分类</strong></p>
@@ -125,7 +125,7 @@
 
 
 -   **配置Kubectl**
-    1.  登录[云容器引擎CCE官网](https://www.huaweicloud.com/product/cce.html)，单击“立即使用“，进入云容器引擎控制台。
+    1.  登录[云容器引擎控制台](https://console.huaweicloud.com/cce2.0/?region=&locale=zh-cn#/app/dashboard)。
     2.  在页面左侧导航中选择“集群管理“，找到刚刚创建的CCE集群。
 
         单击“命令行工具“，在下拉列表中选择“Kubectl“。
@@ -157,7 +157,7 @@
 
 ## **使用自动化部署实现一键部署**<a name="section28755816516"></a>
 
-通过本节，您讲学习如何使用**部署**服务结合**云容器引擎CCE**，完成应用的自动化部署。
+通过本节，您将学习如何使用**部署**服务结合**云容器引擎CCE**，完成应用的自动化部署。
 
 -   <a name="li14054321820"></a>**添加授信主机**
     1.  进入项目，单击页面上方导航“设置  \>  通用设置“。
