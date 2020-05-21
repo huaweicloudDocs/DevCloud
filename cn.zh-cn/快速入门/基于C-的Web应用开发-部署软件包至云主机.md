@@ -31,30 +31,10 @@
 
 1.  添加Windows主机为授信主机前，需要先对主机进行配置，参考[windows2012授信](https://support.huaweicloud.com/usermanual-deployman/deployman_hlp_1019.html)配置主机。
 2.  返回DevCloud页面，单击导航“设置  \>  通用设置“。
-
-    ![](figures/选择目录-通用设置.png)
-
-      
-
-    单击左侧菜单“主机组管理“，进入“主机组管理“页面。
-
-    ![](figures/主机组管理.png)
-
-      
-
-3.  单击“新建主机组“，输入主机组名称、选择操作系统，单击“保存“，完成主机组的创建。
-
-    ![](figures/C--新建主机组.png)
-
-      
-
-4.  单击“添加主机“，输入主机名、云主机IP、用户名、密码、winrm端口，单击“添加“完成主机的添加。
-
-    ![](figures/添加主机.png)
-
-      
-
-5.  等待验证，当显示“验证成功“时，说明主机成功添加。
+3.  单击左侧菜单“主机组管理“，进入“主机组管理“页面。
+4.  单击“新建主机组“，输入主机组名称、选择操作系统，单击“保存“，完成主机组的创建。
+5.  单击“添加主机“，输入主机名、云主机IP、用户名、密码、winrm端口，单击“添加“完成主机的添加。
+6.  等待验证，当显示“验证成功“时，说明主机成功添加。
 
     ![](figures/Windows-添加主机成功.png)
 
@@ -70,41 +50,21 @@
 ## **新建部署任务**<a name="section71691910049"></a>
 
 1.  单击页面上方导航栏“构建&发布  \>  部署“，进入“部署“页面。
-
-    ![](figures/选择目录-部署.png)
-
-      
-
 2.  单击“新建任务“，进入“新建部署任务“页面。
 3.  输入任务名称，单击“下一步“。
-
-    ![](figures/C--部署基本信息.png)
-
-      
-
-4.  选择“不使用模板，直接创建“，进入“部署步骤“配置页面。
-
-    ![](figures/C--选择部署模板.png)
-
-      
-
+4.  选择“不使用模板，直接创建“，进入“部署步骤“页面。
 
   
 
 ## **配置部署任务**<a name="section106831257452"></a>
 
 1.  添加部署步骤：选择部署来源、解压文件、删除文件、配置文件修改、执行PowerShell命令、执行PowerShell脚本。
-
-    ![](figures/C--添加部署步骤.png)
-
-      
-
 2.  **选择部署来源**
 
     -   选择在步骤[添加授信主机](#section1457610572318)中创建的主机组，系统将弹框提示“是否将后续步骤的主机组也修改为<u>_XXX_</u>（<u>_主机组名称_</u>）”，选择“确定“。
     -   单击选择软件包文本框后的![](figures/icon-选择软件包.png)，在弹窗中找到并选择构建包“build.zip“，参考下图编辑“下载到主机的部署目录“。
 
-    ![](figures/C--部署步骤-选择部署来源.png)
+        ![](figures/C--部署步骤-选择部署来源.png)
 
       
 
@@ -136,12 +96,12 @@
     >-   PowerShell脚本参数中，Windows系统下路径的“\\”需要以“\\\\”替换。（只有在“脚本执行参数“一栏需要如此操作。例：“C:\\LogFiles“在此栏应写作“C:\\\\LogFiles“）  
     >-   脚本文件web.ps1在代码仓库的存放目录为“src/Joke.Web/“。  
     >    图中脚本执行参数与脚本文件web.ps1中参数的对应关系为：  
-    >    -   8080：sitePort（端口）  
-    >    -   Superjokes：SiteName（站点名）  
-    >    -   Integrated：SiteAppPoolsModel（进程池使用通道模式）  
-    >    -   v4.0：managedRuntimeVersion（.net版本）  
-    >    -   C:\\\\deploy\_iis\\\\superjokes：WebSitePath（站点程序路径）  
-    >    -   C:/LogFiles：IISLogFile（IIS日志路径）  
+    >    -   **8080**：sitePort（端口）  
+    >    -   **Superjokes**：SiteName（站点名）  
+    >    -   **Integrated**：SiteAppPoolsModel（进程池使用通道模式）  
+    >    -   **v4.0**：managedRuntimeVersion（.Net版本）  
+    >    -   **C:\\\\deploy\_iis\\\\superjokes**：WebSitePath（站点程序路径）  
+    >    -   **C:/LogFiles**：IISLogFile（IIS日志路径）  
 
 7.  **执行PowerShell命令**：
 
@@ -150,13 +110,7 @@
       
 
 8.  单击“参数设置“页签，添加参数“password“，参数值为数据库连接密码。
-
-    ![](figures/C--设置部署参数.png)
-
-      
-
-    完成以上操作之后，单击“保存“，完成部署任务的配置。
-
+9.  完成以上操作之后，单击“保存“，完成部署任务的配置。
 
 ## **执行部署任务**<a name="section07448201849"></a>
 

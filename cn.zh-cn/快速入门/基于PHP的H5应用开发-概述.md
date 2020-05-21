@@ -23,8 +23,8 @@
 
 -   部署环境：Ubuntu 16.04。
 -   涉及华为云服务：
-    -   [软件开发平台 DevCloud](https://www.huaweicloud.com/devcloud/)
-    -   [弹性云服务器 ECS](https://www.huaweicloud.com/product/ecs.html)
+    -   [软件开发平台DevCloud](https://www.huaweicloud.com/devcloud/)
+    -   [弹性云服务器ECS](https://www.huaweicloud.com/product/ecs.html)
 
 
 ## **前提条件**<a name="section19486172818101"></a>

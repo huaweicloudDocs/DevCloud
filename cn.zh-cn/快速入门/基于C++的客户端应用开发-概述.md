@@ -17,9 +17,9 @@
 -   构建环境：Ubuntu 16.04+GNU 5.4.0+Cmake3.5.1。
 -   部署环境：Ubuntu 16.04。
 -   华为云服务：
-    -   [软件开发平台 DevCloud](https://www.huaweicloud.com/devcloud/)
-    -   [容器镜像服务 SWR](https://www.huaweicloud.com/product/swr.html)
-    -   [弹性云服务器 ECS](https://www.huaweicloud.com/product/ecs.html)
+    -   [软件开发平台DevCloud](https://www.huaweicloud.com/devcloud/)
+    -   [容器镜像服务SWR](https://www.huaweicloud.com/product/swr.html)
+    -   [弹性云服务器ECS](https://www.huaweicloud.com/product/ecs.html)
 
 
 ## **前提条件**<a name="section7515102720286"></a>

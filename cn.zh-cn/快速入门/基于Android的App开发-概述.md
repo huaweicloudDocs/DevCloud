@@ -15,7 +15,7 @@
 
 -   项目周期：4周（敏捷迭代开发）。
 -   构建环境：Android SDK 28+Build Tools 28.0.0+Gradle 4.5+Jdk 1.8。
--   华为云服务：软件开发平台 DevCloud。
+-   华为云服务：软件开发平台DevCloud。
 
 ## **前提条件**<a name="section467172816201"></a>
 
