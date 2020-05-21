@@ -69,7 +69,7 @@
       
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
-    >当项目中的成员数量小于等于5人时，不收取费用；当超过5人后，需要购买套餐才可以继续使用，套餐请参见[计费详情](https://support.huaweicloud.com/pg-devcloud/devcloud_pg_1001.html)。  
+    >当项目中的成员数量小于等于5人时，不收取费用；当超过5人后，需要购买套餐才可以继续使用，套餐请参见[产品价格详情](https://www.huaweicloud.com/pricing.html?tab=detail#/devcloud)。  
 
 
 ## **步骤五：为DevCloud项目成员设置角色**<a name="section1456011611358"></a>
