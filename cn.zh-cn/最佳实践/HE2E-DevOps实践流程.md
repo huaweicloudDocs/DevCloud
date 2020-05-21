@@ -13,10 +13,10 @@
 
 以及以下组件和服务：
 
--   [容器镜像服务 SWR](https://www.huaweicloud.com/product/swr.html)
--   [云容器引擎 CCE](https://www.huaweicloud.com/product/cce.html)
+-   [容器镜像服务SWR](https://www.huaweicloud.com/product/swr.html)
+-   [云容器引擎CCE](https://www.huaweicloud.com/product/cce.html)
 
-本文档基于微服务架构的应用程序【凤凰商城】，在整个实验场景中我们将围绕此套代码完成软件研发的整个生命周期的操作。
+本文档基于微服务架构的应用程序【凤凰商城】，在整个实验场景中将围绕此套代码完成软件研发的整个生命周期的操作。
 
 为了更方便的进行本实验，DevCloud提供了一个样例项目“DevOps全流程样例项目“，本文档将通过此样例项目进行各练习的讲解。
 
@@ -30,17 +30,17 @@
 
     -   用户端UI服务（对应样例代码中的“Vote”功能）
         -   业务逻辑：用户可以通过浏览器访问此服务的WebUI，并在特定商品上单击Like按钮。服务将用户所选择物品的记录保存在Redis缓存中。
-        -   技术栈：Python， Flask框架。
+        -   技术栈：Python，Flask框架。
         -   应用服务器：Gunicorn。
 
     -   管理端UI服务（对应样例代码中的“Result”功能）
         -   业务逻辑：用户可以通过浏览器访问此服务的WebUI，会动态显示用户端UI上用户单击Like按钮的统计数据。此数据来自PostgreSQL数据库。
-        -   技术栈：Node.js， express框架。
+        -   技术栈：Node.js，express框架。
         -   应用服务器：server.js。
 
     -   工作进程服务（对应样例代码中的“Worker”功能）
         -   此服务为后台进程，会监控redis缓存中物品记录，并将新纪录取出并保存在PostgreSQL数据库中，以便管理端UI可以抽取数据进行统计显示。
-        -   技术栈：.net core 或者 Java（此服务提供2种技术栈实现了同样的功能，可根据需要修改配置选择其中一个座位运行时进程）
+        -   技术栈：.net core或者Java（此服务提供2种技术栈实现了同样的功能，可根据需要修改配置选择其中一个座位运行时进程）
 
     -   Redis缓存
         -   业务逻辑：此服务作为用户端UI服务的数据持久化服务存在。

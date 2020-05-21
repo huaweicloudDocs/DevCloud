@@ -22,12 +22,12 @@
         </thead>
         <tbody><tr id="row238373516441"><td class="cellrowborder" rowspan="9" valign="top" width="15%" headers="mcps1.1.4.1.1 "><p id="p163112585917"><a name="p163112585917"></a><a name="p163112585917"></a>服务选型</p>
         </td>
-        <td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.4.1.2 "><p id="p139343012596"><a name="p139343012596"></a><a name="p139343012596"></a><span>计费模式</span></p>
+        <td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.4.1.2 "><p id="p139343012596"><a name="p139343012596"></a><a name="p139343012596"></a>计费模式</p>
         </td>
-        <td class="cellrowborder" valign="top" width="70%" headers="mcps1.1.4.1.3 "><p id="p83931730145918"><a name="p83931730145918"></a><a name="p83931730145918"></a><span>按需计费</span></p>
+        <td class="cellrowborder" valign="top" width="70%" headers="mcps1.1.4.1.3 "><p id="p83931730145918"><a name="p83931730145918"></a><a name="p83931730145918"></a>按需计费</p>
         </td>
         </tr>
-        <tr id="row10383135174416"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p53933303597"><a name="p53933303597"></a><a name="p53933303597"></a><span>区域</span></p>
+        <tr id="row10383135174416"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p53933303597"><a name="p53933303597"></a><a name="p53933303597"></a>区域</p>
         </td>
         <td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p193931430125912"><a name="p193931430125912"></a><a name="p193931430125912"></a>最好选择部署任务所在的区域（若项目所在区域资源已售罄，可选其他区域）。</p>
         </td>
@@ -37,34 +37,34 @@
         <td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p75994361839"><a name="p75994361839"></a><a name="p75994361839"></a>default</p>
         </td>
         </tr>
-        <tr id="row13383735114415"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p11393130195918"><a name="p11393130195918"></a><a name="p11393130195918"></a><span>集群名称</span></p>
+        <tr id="row13383735114415"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p11393130195918"><a name="p11393130195918"></a><a name="p11393130195918"></a>集群名称</p>
         </td>
-        <td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p1939311307591"><a name="p1939311307591"></a><a name="p1939311307591"></a><span>自定义</span>（为避免账户下购买过多个集群时不易查找的情况，建议修改系统默认集群名称，使用易于辨认的名称）。</p>
+        <td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p1939311307591"><a name="p1939311307591"></a><a name="p1939311307591"></a>自定义（为避免账户下购买过多个集群时不易查找的情况，建议修改系统默认集群名称，使用易于辨认的名称）。</p>
         </td>
         </tr>
         <tr id="row2038333511442"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p1393193055915"><a name="p1393193055915"></a><a name="p1393193055915"></a>版本</p>
         </td>
-        <td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p1539316309599"><a name="p1539316309599"></a><a name="p1539316309599"></a><span>v1.13.10</span></p>
+        <td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p1539316309599"><a name="p1539316309599"></a><a name="p1539316309599"></a>v1.13.10</p>
         </td>
         </tr>
-        <tr id="row1838314356447"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p839323010593"><a name="p839323010593"></a><a name="p839323010593"></a><span>集群管理规模</span></p>
+        <tr id="row1838314356447"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p839323010593"><a name="p839323010593"></a><a name="p839323010593"></a>集群管理规模</p>
         </td>
-        <td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p0393103045919"><a name="p0393103045919"></a><a name="p0393103045919"></a><span>50</span><span>节点</span></p>
-        </td>
-        </tr>
-        <tr id="row73833352446"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p14394230185916"><a name="p14394230185916"></a><a name="p14394230185916"></a><span>高可用</span></p>
-        </td>
-        <td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p17394530195917"><a name="p17394530195917"></a><a name="p17394530195917"></a><span>是</span></p>
+        <td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p0393103045919"><a name="p0393103045919"></a><a name="p0393103045919"></a>50节点</p>
         </td>
         </tr>
-        <tr id="row1538443574418"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p123941830135916"><a name="p123941830135916"></a><a name="p123941830135916"></a><span>网络类型</span></p>
+        <tr id="row73833352446"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p14394230185916"><a name="p14394230185916"></a><a name="p14394230185916"></a>高可用</p>
         </td>
-        <td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p14394193045915"><a name="p14394193045915"></a><a name="p14394193045915"></a><span>容器隧道网络</span></p>
+        <td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p17394530195917"><a name="p17394530195917"></a><a name="p17394530195917"></a>是</p>
         </td>
         </tr>
-        <tr id="row9321649124515"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p139413018598"><a name="p139413018598"></a><a name="p139413018598"></a><span>容器网段</span></p>
+        <tr id="row1538443574418"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p123941830135916"><a name="p123941830135916"></a><a name="p123941830135916"></a>网络类型</p>
         </td>
-        <td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p1739415300599"><a name="p1739415300599"></a><a name="p1739415300599"></a><span>自动选择</span></p>
+        <td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p14394193045915"><a name="p14394193045915"></a><a name="p14394193045915"></a>容器隧道网络</p>
+        </td>
+        </tr>
+        <tr id="row9321649124515"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p139413018598"><a name="p139413018598"></a><a name="p139413018598"></a>容器网段</p>
+        </td>
+        <td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p1739415300599"><a name="p1739415300599"></a><a name="p1739415300599"></a>自动选择</p>
         </td>
         </tr>
         <tr id="row11863194994513"><td class="cellrowborder" rowspan="9" valign="top" width="15%" headers="mcps1.1.4.1.1 "><p id="p138631049134515"><a name="p138631049134515"></a><a name="p138631049134515"></a>创建节点</p>
@@ -142,7 +142,7 @@
 
     4.  单击页面左上角图标![](figures/icon-弹性云服务器.png)，跳转至弹性云服务器控制台。
 
-        找到到购买Kubernetes集群时创建的节点主机，单击“远程登录“，打开并登录云主机。
+        找到购买Kubernetes集群时创建的节点主机，单击“远程登录“，打开并登录云主机。
 
     5.  输入以下命令，创建配置文件。
 

@@ -43,7 +43,7 @@
 >![](public_sys-resources/icon-note.gif) **说明：**   
 >关于vote、result、worker的说明，请参见[HE2E DevOps实践流程](HE2E-DevOps实践流程.md)。  
 
-## **01.购买并弹性云服务器**<a name="section369110705717"></a>
+## **购买并弹性云服务器**<a name="section369110705717"></a>
 
 通过本节，您将学习如何购买并配置Linux系统ECS主机。
 
@@ -81,7 +81,7 @@
         </tr>
         <tr id="row2038333511442"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p1018772684519"><a name="p1018772684519"></a><a name="p1018772684519"></a>规格</p>
         </td>
-        <td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p111871267459"><a name="p111871267459"></a><a name="p111871267459"></a>通用计算型 - s3.large.2（<span>若已售罄，可选其他2核8G以上规格</span>）。</p>
+        <td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p111871267459"><a name="p111871267459"></a><a name="p111871267459"></a>通用计算型 - s3.large.2（若已售罄，可选其他2核8G以上规格）。</p>
         </td>
         </tr>
         <tr id="row1838314356447"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p111874269457"><a name="p111874269457"></a><a name="p111874269457"></a>镜像</p>
@@ -147,7 +147,7 @@
     2.  登录云主机：
         -   控制台登录（推荐）：在列表中单击“远程登录“，打开云主机。
 
-            输入用户名“root“，及在[ 购买ECS主机](#li1196412555335)中设置的密码，登录云主机。
+            输入用户名“root“，及在[购买ECS主机](#li1196412555335)中设置的密码，登录云主机。
 
             ![](figures/10-ECS部署-01.png)
 
@@ -200,7 +200,7 @@
 
 
 
-## **02.使用自动化部署实现一键部署**<a name="section13226643184211"></a>
+## **使用自动化部署实现一键部署**<a name="section13226643184211"></a>
 
 通过本节，您将学习如何使用**部署**服务结合**弹性云服务器ECS**，完成应用的自动化部署。
 
@@ -300,7 +300,7 @@
         </tr>
         <tr id="row127819240219"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p19278524727"><a name="p19278524727"></a><a name="p19278524727"></a>docker login failed</p>
         </td>
-        <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p027813241629"><a name="p027813241629"></a><a name="p027813241629"></a>docker 登录失败。</p>
+        <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p027813241629"><a name="p027813241629"></a><a name="p027813241629"></a>docker登录失败。</p>
         </td>
         <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><a name="ol1222221812414"></a><a name="ol1222221812414"></a><ol id="ol1222221812414"><li>检查构建任务及部署任务的参数是否正确。</li><li>docker login指令过期，重新获取</li></ol>
         </td>

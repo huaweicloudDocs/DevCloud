@@ -2,7 +2,7 @@
 
 通过本章节，您将了解如何使用Git**代码托管**服务进行源代码管理，并对门店网络查询功能进行开发，以及如何使用功能分支的方式进行代码的开发合并。
 
-## 01.**使用CloudIDE修改和提交代码**<a name="section1333324173518"></a>
+## **使用CloudIDE修改和提交代码**<a name="section1333324173518"></a>
 
 通过本节，您将学习如何通过**CloudIDE**完成需求“添加门店网络菜单“的代码开发。
 
@@ -28,7 +28,7 @@
     >        
     >2.  待CloudIDE加载完毕后（由于免费体验，等待时长可能较长），将代码切换至本项目当中的代码仓库。切换方式有HTTPS与SSH两种：  
     >    1.  **HTTPS方式**：  
-    >        首先在DevCloud代码托管服务中[ 配置HTTPS密码](#li19889457363)，  
+    >        首先在DevCloud代码托管服务中[配置HTTPS密码](#li19889457363)。  
     >        然后返回CloudIDE中[导入工程](https://support.huaweicloud.com/usermanual-cloudide/import_projects.html)。导入工程时注意**Url为项目的HTTPS地址**，且需要将HTTPS用户名与密码输入User和Password。  
     >        ![](figures/07-代码托管-22.png)  
     >            
@@ -42,7 +42,7 @@
 
 3.  等待CloudIDE加载完毕。
 
-    在左侧导航中找到文件“/vote/templates/index.html“并打开，在179行添加菜单“门店网络“.
+    在左侧导航中找到文件“/vote/templates/index.html“并打开，在179行添加菜单“门店网络“。
 
     ![](figures/07-代码托管-03.png)
 
@@ -51,7 +51,7 @@
 4.  <a name="li7319628103519"></a>提交修改至代码仓库。
     1.  单击左侧边栏图标![](figures/icon-Source-Control-Git.png)，打开Git功能。
     2.  单击修改文件后方的图标![](figures/icon-Stage-All-Changes.png)，将修改内容添加进提交内容当中。
-    3.  在输入框中输入提交信息：fix \#_工作项编码 本次提交的注释信息_。
+    3.  在输入框中输入提交信息“fix \#“_“工作项编码 本次提交的注释信息“_。
     4.  单击图标提交本次修改。
     5.  单击图标，在下拉列表中单击“Push“，推送代码到代码仓库。
 
@@ -76,7 +76,7 @@
       
 
 
-## **02.使用Git进行本地修改和提交代码（选做）**<a name="section65506178"></a>
+## **使用Git进行本地修改和提交代码（选做）**<a name="section65506178"></a>
 
 在本节中，您将学习如何创建，克隆和推送Git存储库，并将本地修改同步到**代码托管**服务中。
 
@@ -102,7 +102,7 @@
     2.  单击“添加SSH密钥“。根据页面说明，使用Git客户端生成SSH密钥，并复制到页面中，单击“确定“保存。
 
 -   **克隆Git代码仓库**
-    1.  返回“代码托管“页面，找到代码仓库“phoenix-sample“.
+    1.  返回“代码托管“页面，找到代码仓库“phoenix-sample“。
 
         单击“仓库URL“一列中的“HTTPS“，系统将提示“复制成功“。
 
@@ -123,7 +123,7 @@
 
 -   **提交代码，并链接到工作项**
 
-    参照[01.使用CloudIDE修改和提交代码](#section1333324173518)，使用本地IDE修改代码后，使用Git客户端输入以下命令提交代码。
+    参照[使用CloudIDE修改和提交代码](#section1333324173518)，使用本地IDE修改代码后，使用Git客户端输入以下命令提交代码。
 
     ```
     git add . 
@@ -132,7 +132,7 @@
     ```
 
 
-## **03.使用Git分支+合并请求方式提交代码并进行代码检视**<a name="section52684690"></a>
+## **使用Git分支+合并请求方式提交代码并进行代码检视**<a name="section52684690"></a>
 
 通过本节，您将学习如何通过功能分支以及拉取请求的方式完成用户故事的开发，以及在线代码检视。
 
@@ -174,7 +174,7 @@ Hi 兄弟们：
         ![](figures/07-代码托管-09.png)
 
         >![](public_sys-resources/icon-note.gif) **说明：**   
-        >通常我们会建议为3分。如果不打算使用这个功能，可以设置为0分。  
+        >通常建议设置为3分。如果不打算使用这个功能，可以设置为0分。  
 
           
 
@@ -308,7 +308,7 @@ Hi 兄弟们：
     6.  此时，单击“分支“页签，分支列表中将不再显示在[•创建合并请求](#li1320712584219)中选择的源分支。
 
 
-## **04.使用代码托管的高级管理功能**<a name="section4400168"></a>
+## **使用代码托管的高级管理功能**<a name="section4400168"></a>
 
 代码托管服务提供了以下功能，能够满足更多的使用场景。
 
@@ -326,22 +326,22 @@ Hi 兄弟们：
 </tr>
 <tr id="row199671866434"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.1.3.1.1 "><p id="p696717611431"><a name="p696717611431"></a><a name="p696717611431"></a><a href="https://support.huaweicloud.com/usermanual-codehub/devcloud_hlp_0734.html" target="_blank" rel="noopener noreferrer">IP白名单</a></p>
 </td>
-<td class="cellrowborder" valign="top" width="80%" headers="mcps1.1.3.1.2 "><p id="p796714624320"><a name="p796714624320"></a><a name="p796714624320"></a><span>只有在IP白名单范围内的仓库访问才是允许的，除此之外其他IP发起的访问一律被拒绝。</span></p>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.1.3.1.2 "><p id="p796714624320"><a name="p796714624320"></a><a name="p796714624320"></a>只有在IP白名单范围内的仓库访问才是允许的，除此之外其他IP发起的访问一律被拒绝。</p>
 </td>
 </tr>
 <tr id="row169675617432"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.1.3.1.1 "><p id="p1396714664317"><a name="p1396714664317"></a><a name="p1396714664317"></a><a href="https://support.huaweicloud.com/usermanual-codehub/codehub_ug_1001.html" target="_blank" rel="noopener noreferrer">子模块设置</a></p>
 </td>
-<td class="cellrowborder" valign="top" width="80%" headers="mcps1.1.3.1.2 "><p id="p159671268433"><a name="p159671268433"></a><a name="p159671268433"></a><span>Git为管理仓库共用而衍生出的一个工具</span>。<span>通过子模块您可以将公共仓库作为子目录包含到您的仓库中，并能够双向更新该公共仓库的代码</span>。</p>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.1.3.1.2 "><p id="p159671268433"><a name="p159671268433"></a><a name="p159671268433"></a>Git为管理仓库共用而衍生出的一个工具。通过子模块您可以将公共仓库作为子目录包含到您的仓库中，并能够双向更新该公共仓库的代码。</p>
 </td>
 </tr>
 <tr id="row196712611430"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.1.3.1.1 "><p id="p29686654316"><a name="p29686654316"></a><a name="p29686654316"></a><a href="https://support.huaweicloud.com/usermanual-codehub/codehub_ug_0222.html" target="_blank" rel="noopener noreferrer">WebHook设置</a></p>
 </td>
-<td class="cellrowborder" valign="top" width="80%" headers="mcps1.1.3.1.2 "><p id="p1296886154317"><a name="p1296886154317"></a><a name="p1296886154317"></a><span>WebHook允许开发人员通过订阅 CodeHub 的仓库的分支推送(push)，标签推送(tag push)等事件来触发自己系统的构建、更新镜像、部署等操作。</span></p>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.1.3.1.2 "><p id="p1296886154317"><a name="p1296886154317"></a><a name="p1296886154317"></a>WebHook允许开发人员通过订阅CodeHub的仓库的分支推送(push)，标签推送(tag push)等事件来触发自己系统的构建、更新镜像、部署等操作。</p>
 </td>
 </tr>
 <tr id="row996811619431"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.1.3.1.1 "><p id="p1622485304915"><a name="p1622485304915"></a><a name="p1622485304915"></a>通知设置</p>
 </td>
-<td class="cellrowborder" valign="top" width="80%" headers="mcps1.1.3.1.2 "><p id="p1096876114314"><a name="p1096876114314"></a><a name="p1096876114314"></a><span>当仓库发生重大变更（例如删除、冻结）时，系统会发送邮件通知。通过</span><span class="menucascade" id="menucascade23911454175913"><a name="menucascade23911454175913"></a><a name="menucascade23911454175913"></a>“<span class="uicontrol" id="uicontrol6391554155918"><a name="uicontrol6391554155918"></a><a name="uicontrol6391554155918"></a>设置</span> &gt; <span class="uicontrol" id="uicontrol20119656105914"><a name="uicontrol20119656105914"></a><a name="uicontrol20119656105914"></a>基础设置</span> &gt; <span class="uicontrol" id="uicontrol14278907013"><a name="uicontrol14278907013"></a><a name="uicontrol14278907013"></a>通知设置</span>”</span><span>页面，可设置接收者范围。</span></p>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.1.3.1.2 "><p id="p1096876114314"><a name="p1096876114314"></a><a name="p1096876114314"></a>当仓库发生重大变更（例如删除、冻结）时，系统会发送邮件通知。通过<span class="menucascade" id="menucascade23911454175913"><a name="menucascade23911454175913"></a><a name="menucascade23911454175913"></a>“<span class="uicontrol" id="uicontrol6391554155918"><a name="uicontrol6391554155918"></a><a name="uicontrol6391554155918"></a>设置</span> &gt; <span class="uicontrol" id="uicontrol20119656105914"><a name="uicontrol20119656105914"></a><a name="uicontrol20119656105914"></a>基础设置</span> &gt; <span class="uicontrol" id="uicontrol14278907013"><a name="uicontrol14278907013"></a><a name="uicontrol14278907013"></a>通知设置</span>”</span>页面，可设置接收者范围。</p>
 </td>
 </tr>
 </tbody>
