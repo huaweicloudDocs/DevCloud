@@ -3,8 +3,13 @@
 -   [JIRA项目管理迁移至DevCloud](JIRA项目管理迁移至DevCloud.md)
     -   [JIRA迁移概览](JIRA迁移概览.md)
     -   [项目成员迁移](JIRA迁移-项目成员迁移.md)
-    -   [工作项迁移](工作项迁移.md)
-    -   [敏捷管理迁移](敏捷管理迁移.md)
+    -   [工作项迁移](JIRA迁移-工作项迁移.md)
+    -   [敏捷管理迁移](JIRA迁移-敏捷管理迁移.md)
+
+-   [MSP项目管理迁移至DevCloud](MSP项目管理迁移至DevCloud.md)
+    -   [Microsoft Project迁移概览](Microsoft-Project迁移概览.md)
+    -   [用户管理迁移](用户管理迁移.md)
+    -   [工作项迁移](MSP迁移-工作项迁移.md)
 
 -   [GitLab迁移至DevCloud](GitLab迁移至DevCloud.md)
     -   [GitLab迁移概览](GitLab迁移概览.md)

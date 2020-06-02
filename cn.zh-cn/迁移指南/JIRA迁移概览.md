@@ -1,6 +1,6 @@
 # **JIRA迁移概览**<a name="devcloud_migration_0014"></a>
 
-本文主要介绍由JIRA（下文统称为SVN）向[软件开发平台（DevCloud）](https://www.huaweicloud.com/devcloud/)迁移的方案建议与操作指导。
+本文主要介绍由JIRA向[软件开发平台DevCloud](https://www.huaweicloud.com/devcloud/)迁移的方案建议与操作指导。
 
 JIRA是由Atlassian公司出品的项目与事务跟踪工具，用于缺陷跟踪、任务跟踪及项目管理等工作领域。
 

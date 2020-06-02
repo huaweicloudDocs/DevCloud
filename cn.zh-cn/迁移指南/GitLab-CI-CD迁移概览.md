@@ -1,6 +1,6 @@
 # **GitLab CI/CD迁移概览**<a name="devcloud_migration_0009"></a>
 
-本文主要介绍使用GitLab进行CI/CD的企业，如何迁移至DevCloud平台进行持续构建与部署。
+本文主要介绍使用GitLab进行CI/CD的企业，如何迁移至[软件开发平台DevCloud](https://www.huaweicloud.com/devcloud/)进行持续构建与部署。
 
 GitLab CI指不断的将新代码集成到服务器，并尽早进行自动构建、集成测试的过程。GitLab 8.0+提供了GitLab CI功能， 使GitLab中的工程代码不必再依赖其他工具（如Jenkins）就可以进行独立的构建。GitLab Runner则是实际处理GitLab CI构建的应用程序， 它通常单独部署，通过注册到GitLab工程下被调用 。
 

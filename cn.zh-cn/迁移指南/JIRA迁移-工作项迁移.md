@@ -160,7 +160,7 @@ JIRA平台和DevCloud平台中，不同类型的工作项可以有拥有属于�
 
 2.  **导出DevCloud工作项模板**
 
-    进入DevCloud已创建的项目，在“工作  \>  Backlog“中，单击页面右上角“更多操作  \>  导入“，在弹框中单击“下载模板“。
+    进入DevCloud已创建的项目，在“工作  \>  工作项“中，单击页面右上角“更多操作  \>  导入“，在弹框中单击“下载模板“。
 
     ![](figures/JIRAProjectMigration_017_DownloadTemp.png)
 
@@ -183,14 +183,14 @@ JIRA平台和DevCloud平台中，不同类型的工作项可以有拥有属于�
 
         JIRA和DevCloud中相同的字段（如**优先级**字段）可能取值阈不同。JIRA平台**优先级**字段的取值域是Highest、High、Medium、Low、Lowest；DevCloud平台**优先级**字段的取值域为高、中、低。
 
-        -   方法1：取值归类匹配：Highest/High-\>高，Medium-\>中，Lowest/Low-\>低。
+        -   方法1：取值归类匹配：Highest/High\>高，Medium\>中，Lowest/Low\>低。
         -   方法2：增加新字段，如命名为**优先权限**（由于DevCloud中的“优先级”字段无法删除，所以取别名代替），并添加Highest，High，Medium，Low，Lowest取值域
 
     3.  内容迁移：将JIRA的字段信息拷贝至DevCloud模板对应列中。
 
 4.  **导入DevCloud工作项**
-    1.  返回Backlog页面，单击“更多操作  \>  导入“，选择需要导入的EXCEL文件，单击“导入“。
-    2.  关联工作项。
+    1.  返回工作项页面，单击“更多操作  \>  导入“，选择编辑好的EXCEL文件，单击“导入“。
+    2.  关联工作项
 
         JIRA平台中通过**问题ID**和**父级ID**字段记录了父子关系。
 

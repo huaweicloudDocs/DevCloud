@@ -1,6 +1,6 @@
 # **GitLab迁移概览**<a name="devcloud_migration_0001"></a>
 
-本文主要介绍由GitLab向[软件开发平台DevCloud](https://www.huaweicloud.com/devcloud/)迁移的方案建议与操作指导
+本文主要介绍由GitLab向[软件开发平台DevCloud](https://www.huaweicloud.com/devcloud/)迁移的方案建议与操作指导。
 
 GitLab是一个基于Git的、开源的、Web端代码管理工具。企业在公网或内网搭建GitLab服务器，研发团队成员使用Git终端工具与服务器进行交互操作。
 

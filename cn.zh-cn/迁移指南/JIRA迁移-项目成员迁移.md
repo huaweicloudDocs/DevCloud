@@ -45,7 +45,7 @@
 
 ## **步骤四：创建DevCloud项目**<a name="section886460183511"></a>
 
-项目是DevCloud的项目管理单位，新建项目分为两种类型：**Scrum项目**、**看板项目**。
+DevCloud以项目为单位进行管理，新建项目分为两种类型：**Scrum项目**、**看板项目**。
 
 由于Scrum项目类型提供了更为丰富的项目设置功能，因此建议JIRA平台中的**Scrum开发方法**、**Kanban开发方法**等都迁移至DevCloud的Scrum项目类型。
 
@@ -62,7 +62,9 @@
 
     项目创建成功后，系统将跳转至“Backlog“页面。
 
-4.  单击导航栏“设置  \>  通用设置“，在“成员管理“页面单击“添加成员“，选择“从本企业用户“。在弹框中勾选需要添加的成员即可。
+4.  在“设置  \>  通用设置  \>  成员管理“页面中，单击“添加成员“，在下拉列表中选择“从本企业用户“。
+
+    在弹框中勾选需要添加的成员，按照页面提示完成项目成员的添加。
 
     ![](figures/JIRAProjectMigration_007_AddUser.png)
 
@@ -76,9 +78,9 @@
 
 JIRA中包含了多种角色：Administrators、project-master、project-custom、project-dev、project-tester，这些角色除Administrators外都是使用者自定义的。
 
-[DevCloud](https://www.huaweicloud.com/devcloud/)中的默认项目角色包括：项目创建者、项目经理、测试经理、开发人员、测试人员、参与者、浏览者（不同权限角色的权限请参见[角色与操作](https://support.huaweicloud.com/usermanual-projectman/projetcman_ug_3001.html)）。
+DevCloud中的默认项目角色包括：项目创建者、项目经理、测试经理、开发人员、测试人员、参与者、浏览者（不同权限角色的权限请参见[角色与操作](https://support.huaweicloud.com/usermanual-projectman/projetcman_ug_3001.html)）。
 
-由于JIRA平台角色是自定义的，因此在两个平台进行角色迁移时，需要根据各角色拥有的权限进行匹配。当DevCloud默认角色无法满足JIRA角色需要，可以在“设置  \>  项目设置  \>  权限设置“新增角色，并按照JIRA中角色权限勾选对应的操作权限。
+由于JIRA平台角色是自定义的，因此在两个平台进行角色迁移时，需要根据各角色拥有的权限进行匹配。当DevCloud默认角色无法满足JIRA角色需要，可以在“设置  \>  项目设置  \>  权限设置“页面新增角色，并按照JIRA中角色权限勾选对应的操作权限。
 
 ![](figures/JIRAProjectMigration_008_NewRole.png)
 

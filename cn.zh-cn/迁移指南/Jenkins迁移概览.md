@@ -1,6 +1,6 @@
 # **Jenkins迁移概览**<a name="devcloud_migration_0018"></a>
 
-本指南主要为用户提供Jenkins迁移到华为云软件开发平台DevCloud（后文统称为DevCloud）的迁移方案建议与操作指导。
+本文主要介绍由Jenkins向[软件开发平台DevCloud](https://www.huaweicloud.com/devcloud/)（后文统称为DevCloud）迁移的方案建议与操作指导。
 
 Jenkins是一个开源的、基于Java开发的持续集成工具，用于监控持续重复的工作。作为一个可扩展的自动化服务器，Jenkins可以用作简单的CI服务器，或者变成任何项目的持续交付中心。Jenkins使用流程场景如下图所示：
 
