@@ -43,7 +43,7 @@
 >![](public_sys-resources/icon-note.gif) **说明：**   
 >关于vote、result、worker的说明，请参见[HE2E DevOps实践流程](HE2E-DevOps实践流程.md)。  
 
-## **购买并弹性云服务器**<a name="section369110705717"></a>
+## **购买并配置弹性云服务器**<a name="section369110705717"></a>
 
 通过本节，您将学习如何购买并配置Linux系统ECS主机。
 
@@ -309,7 +309,7 @@
         </td>
         <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p52791724129"><a name="p52791724129"></a><a name="p52791724129"></a>获取镜像被拒绝</p>
         </td>
-        <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><a name="ol1476951253"></a><a name="ol1476951253"></a><ol id="ol1476951253"><li>进入SWR中查看构建任务产生的镜像是否存在。</li><li>docker login指令过期，重新获取。 |</li></ol>
+        <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><a name="ol1476951253"></a><a name="ol1476951253"></a><ol id="ol1476951253"><li>进入SWR中查看构建任务产生的镜像是否存在。</li><li>docker login指令过期，重新获取。</li></ol>
         </td>
         </tr>
         </tbody>

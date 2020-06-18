@@ -213,7 +213,7 @@
             -   **-p**之后的字符串为密码（docker-password）
             -   最后的字符串为服务器地址（docker-server）
 
-            ![](figures/11-CCE部署-06.png)
+            ![](figures/10-ECS部署-08.png)
 
               
 
