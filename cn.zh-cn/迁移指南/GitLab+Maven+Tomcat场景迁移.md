@@ -67,8 +67,6 @@
 
     ![](figures/Jenkins_Maven_003.png)
 
-      
-
 
 本节后续几个步骤基于第二种源码迁移方式。
 
@@ -109,16 +107,12 @@
 
     ![](figures/Jenkins_Maven_007.png)
 
-      
-
 3.  构建模板选择“Maven“，单击“确定“，系统将自动跳转至“构建步骤“页签。
 4.  编辑构建步骤“Maven构建“：
     -   根据Jenkins中的构建环境，选择相应**工具版本**。
     -   根据Jenkins待迁移任务“Build“页面“Goals and options“命令行，在**命令**窗口输入相应的构建命令。
 
         ![](figures/Jenkins_Maven_006.png)
-
-          
 
 
 
@@ -130,13 +124,9 @@ Jenkins默认会将构建包存储到本机。DevCloud提供发布仓库服务�
 
     ![](figures/Jenkins_Maven_011.png)
 
-      
-
 2.  返回DevCloud构建任务，编辑构建步骤“上传软件包到软件发布库“，根据Jenkins设置输入**构建包路径**。
 
     ![](figures/Jenkins_Maven_012.png)
-
-      
 
 3.  单击“保存并执行“，任务构建成功后，在“构建&发布  \>  发布“页面可搜索到生成的构建包。
 
@@ -148,8 +138,6 @@ Jenkins部署过程主要包括：设置部署主机、在部署主机上安装T
     1.  登录Jenkins，在“系统管理  \>  系统配置“页面，查看“SSH remote hosts“板块信息。
 
         ![](figures/Jenkins_Maven_004.png)
-
-          
 
     2.  进入DevCloud项目，在“设置  \>  通用设置  \>  主机组管理“页面单击“新建主机组“，根据页面提示输入必要信息，单击“保存“。
     3.  单击“添加主机“，在弹窗中根据Jenkins设置输入主机信息，单击“添加“保存。
@@ -184,8 +172,6 @@ Jenkins部署过程主要包括：设置部署主机、在部署主机上安装T
 
         ![](figures/Jenkins_Maven_013.png)
 
-          
-
     2.  进入DevCloud项目，在“构建&发布  \>  部署“页面单击“新建任务“，输入任务名称，单击“下一步“。
     3.  部署模板选择“Tomcat应用部署“，单击“下一步“，系统将自动跳转至“部署步骤“页面。
     4.  配置部署步骤：
@@ -196,8 +182,8 @@ Jenkins部署过程主要包括：设置部署主机、在部署主机上安装T
         -   **选择部署来源**：选择在[步骤三](#section108249396163)构建生成的构建包，参考Jenkins配置“下载到主机的部署目录“。
         -   **启动Tomcat服务**：http端口与步骤“安装Tomcat“保持一致。
 
-        >![](public_sys-resources/icon-note.gif) **说明：**   
-        >若在DevCloud部署任务中使用的主机与Jenkins相同，可不执行安装JDK、Tomcat等步骤。  
+        >![](public_sys-resources/icon-note.gif) **说明：** 
+        >若在DevCloud部署任务中使用的主机与Jenkins相同，可不执行安装JDK、Tomcat等步骤。
 
 
 

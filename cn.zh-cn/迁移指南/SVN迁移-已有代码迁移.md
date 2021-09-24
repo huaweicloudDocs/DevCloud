@@ -23,16 +23,12 @@
 
         ![](figures/SVNRepoMigration_012.png)
 
-          
-
     3.  打开文件“userinfo.txt“，可看到文件中显示所有对该仓库有提交的提交者信息。
     4.  因为Git是用邮箱来标识一个提交者的，为了更好的将SVN已有的信息映射到Git仓库里，需要从SVN用户名到Git作一个映射关系。
 
         修改“userinfo.txt“，使每一行中，svn作者 = Git作者昵称 <邮箱地址\>，用如下格式表示映射关系：
 
         ![](figures/SVNRepoMigration_014.png)
-
-          
 
 
 -   <a name="li826375711135"></a>**步骤二：建立本地Git仓库**
@@ -84,8 +80,6 @@
 
         ![](figures/SVNRepoMigration_016.png)
 
-          
-
     3.  输入以下命令，进入“KotlinGallery“文件夹，并验证当前Git仓库分支结构。
 
         ```
@@ -94,8 +88,6 @@
         ```
 
         ![](figures/SVNRepoMigration_018.png)
-
-          
 
         从图中可以看到所有SVN中的目录结构均以Git分支的形式迁移成功。
 
@@ -115,8 +107,6 @@
 
         ![](figures/SVNRepoMigration_019.png)
 
-          
-
     2.  输入以下命令，把“refs/remotes“下面剩下的索引变成本地分支。
 
         ```
@@ -128,8 +118,6 @@
 
         ![](figures/SVNRepoMigration_020.png)
 
-          
-
     3.  输入以下命令，将trunk分支合入master分支，并删除trunk分支。
 
         ```
@@ -140,8 +128,6 @@
         ```
 
         ![](figures/SVNRepoMigration_021.png)
-
-          
 
 
 -   **步骤四：本地代码上传**
@@ -155,13 +141,9 @@
 
         ![](figures/SVNRepoMigration_022.png)
 
-          
-
         推送成功后，登录CodeHub，可在“分支“页面中查看到当前仓库下的master分支。
 
         ![](figures/SVNRepoMigration_023.png)
-
-          
 
     3.  输入以下命令，从本地推送其余分支至CodeHub。
 
@@ -181,8 +163,6 @@
 
         ![](figures/SVNRepoMigration_027.png)
 
-          
-
 
 
 ## **迁移方法二：HTTP在线导入**<a name="section1566655328"></a>
@@ -199,8 +179,6 @@
 
     ![](figures/SVNRepoMigration_030.png)
 
-      
-
 4.  输入要新建的代码仓库名称，进行相应权限配置，单击“确定“，等待仓库创建。
 5.  代码仓库创建成功后，单击仓库名称查看仓库内容。
 
@@ -210,6 +188,4 @@
 ## **迁移方法小结**<a name="section105618314234"></a>
 
 通过对比可以发现，本文里两种迁移方法都对SVN中的代码及操作记录进行了有效迁移，区别点在于方法一在迁移的过程中，将SVN中的branch、tag文件夹映射为Git中的分支及标签，这样做有利于后续继续基于DevCloud进行开发，但是迁移过程较为繁琐。方法二操作方式简单，但是将SVN中的branch、tag文件夹进行平移，不利于后续的继续开发。
-
-  
 

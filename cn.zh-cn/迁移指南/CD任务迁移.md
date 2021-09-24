@@ -31,8 +31,6 @@ CD任务迁移包括以下四个步骤：
 
     ![](figures/GitLabCICDMigration_017_PCConnect.png)
 
-      
-
 4.  按照3、4步添加其它主机，确保所有主机连通性验证都已经成功。
 
 ## **步骤三：获取GitLab CD任务**<a name="section5417216614"></a>
@@ -66,15 +64,11 @@ deploy.sh脚本如下图：
 
         ![](figures/GitLabCICDMigration_020_JDK.png)
 
-          
-
 4.  配置步骤“安装Tomcat“：
     -   系统支持3个**tomcat版本**，请根据实际情况选择合适的版本。
     -   **安装路径**保持默认参数“$\{jdk\_path\}“，参数默认值为“/usr/local/tomcat“。如需更改默认参数，请在**“参数设置“**页签中更改对应的参数值。
 
         ![](figures/GitLabCICDMigration_021_Tomcat.png)
-
-          
 
 5.  配置步骤“停止Tomcat服务“：
     -   **服务对应的绝对路径**保持默认参数“$\{tomcat\_home\_path\}“，参数默认值为“/usr/local/tomcat/apache-tomcat-8.5.38“。如果更改安装Tomcat的版本，请在**“参数设置“**页签中更改对应的参数值。
@@ -82,15 +76,11 @@ deploy.sh脚本如下图：
 
         ![](figures/GitLabCICDMigration_022_KillTomcat.png)
 
-          
-
 6.  配置步骤“选择部署来源“：，
     -   **选择源类型**为“软件包“，单击**选择软件包**文本框后的![](figures/icon-浏览软件包.png)，在弹框中选择软件包。
     -   **下载到主机的部署目录**保持默认参数“$\{download\_path\}“，参数默认值为  “/usr/local/tomcat/apache-tomcat-8.5.38/webapps“，如果更改路径，请在**“参数设置“**页签中更改对应的参数值。
 
         ![](figures/GitLabCICDMigration_023_Package.png)
-
-          
 
 7.  配置步骤“启动Tomcat服务“：
 
@@ -100,6 +90,4 @@ deploy.sh脚本如下图：
     -   测试路径可从主机组中选择一台主机，其中参数“$\{service\_port\}“可以根据实际访问端口配置。
     -   本步骤用于测试服务状态是否OK，若请求状态码非200或201，将认为服务不可用。
 
-
-  
 

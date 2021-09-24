@@ -73,9 +73,9 @@ MSP与DevCloud中工作项类型的映射关系如下表所示：
 </tbody>
 </table>
 
->![](public_sys-resources/icon-note.gif) **说明：**   
->上表为MSP为四级父子工作项时的对应关系。  
->当MSP父子深度小于四级时，本文建议从Task&Bug向上映射。例如：MSP为三级父子关系时，不需要与Epic进行映射。  
+>![](public_sys-resources/icon-note.gif) **说明：** 
+>上表为MSP为四级父子工作项时的对应关系。
+>当MSP父子深度小于四级时，本文建议从Task&Bug向上映射。例如：MSP为三级父子关系时，不需要与Epic进行映射。
 
 ## **工作流迁移**<a name="section2110183411273"></a>
 
@@ -87,8 +87,6 @@ MSP和DevCloud平台中不同类型的工作项可以有拥有属于自己的工
 
     ![](figures/MSProjectMigration_015_SrcWorkflow.png)
 
-      
-
 2.  **创建DevCloud工作流**
     1.  进入DevCloud项目，在“设置  \>  项目设置  \>  Epic设置  \>  状态与流转  \>  状态管理“页面中，根据MSP状态流设置工作项状态。
 
@@ -98,16 +96,12 @@ MSP和DevCloud平台中不同类型的工作项可以有拥有属于自己的工
 
         ![](figures/MSProjectMigration_016_DstWorkState.png)
 
-          
-
     2.  按照相同的方法，设置Feature、Story、Task、Bug的状态。
     3.  进入“流转方向“页面，按照需要勾选各状态之间的流转方向。
 
         例如：不可以对已经关闭的工作项重新置成新建，则不勾选从**关闭**向**新建**流转的复选框。
 
         ![](figures/MSProjectMigration_017_DstWorkFlow.png)
-
-          
 
 
 
@@ -119,15 +113,11 @@ MSP和DevCloud平台中不同类型的工作项可以有拥有属于自己的工
 
     ![](figures/MSProjectMigration_018_SrcBucket.png)
 
-      
-
 2.  **创建DevCloud模块**
 
     进入DevCloud项目，在“设置  \>  项目设置  \>  模块设置“页面，单击页面右上角“添加“，根据MSP存储桶设置添加模块及负责人。
 
     ![](figures/MSProjectMigration_019_DstModule.png)
-
-      
 
 
 ## **工作项内容迁移**<a name="section1697332902017"></a>
@@ -143,8 +133,6 @@ MSP和DevCloud平台中不同类型的工作项可以有拥有属于自己的工
     2.  在弹框中单击“下载模板“。
 
         ![](figures/MSProjectMigration_021_DownloadTemp.png)
-
-          
 
 3.  **填充DevCloud工作项模板**
 
@@ -204,6 +192,4 @@ MSP和DevCloud平台中不同类型的工作项可以有拥有属于自己的工
         -   依赖关系关联：在DevCloud平台中，根据MSP中记录的“依据&后续任务“关系，在工作项详情页中添加相应的关联工作项。
 
 
-
-  
 

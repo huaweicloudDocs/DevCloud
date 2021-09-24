@@ -51,22 +51,16 @@ build:
 
     ![](figures/GitLabCICDMigration_009_Maven.png)
 
-      
-
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >如果想将生成的软件包放入DevCloud私有依赖库，作为其它构建任务的依赖，构建步骤“Maven构建“的配置方式请参考[通过编译构建任务快速发布私有组件到私有依赖库](https://support.huaweicloud.com/qs-releaseman/cloudrelease_06_1002.html)。  
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >如果想将生成的软件包放入DevCloud私有依赖库，作为其它构建任务的依赖，构建步骤“Maven构建“的配置方式请参考[通过编译构建任务发布/获取Maven私有组件](https://support.huaweicloud.com/qs-releaseman/cloudrelease_06_0003.html)。
 
 3.  选择“参数设置“页签添加参数“PACKAGE“和“VERSION“。
 
     ![](figures/GitLabCICDMigration_011_Parameter.png)
 
-      
-
 4.  返回“构建步骤“页签，编辑步骤“上传软件包到软件发布库“：发布版本号及包名采用参数形式，通过参数设置归档到软件发布库的软件包名称与版本，供后续DevCloud CD读取使用。
 
     ![](figures/GitLabCICDMigration_010_Package.png)
-
-      
 
 5.  在“源码选择“页签中：
 
@@ -76,8 +70,6 @@ build:
 
     ![](figures/GitLabCICDMigration_012_Branch.png)
 
-      
-
 
 ## **步骤三：执行DevCloud构建任务**<a name="section1228665031315"></a>
 
@@ -85,7 +77,5 @@ build:
 2.  构建成功后，单击导航“构建&发布  \>  发布“，进入软件发布库页面查看生成的软件包。
 
     ![](figures/GitLabCICDMigration_032_Package.png)
-
-      
 
 

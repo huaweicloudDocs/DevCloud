@@ -33,9 +33,5 @@ stages:
 
     ![](figures/GitLabCICDMigration_027_Pipeline.png)
 
-      
-
 5.  进入流水线详情页面，单击“全新执行“，即可触发流水线。
-
-  
 

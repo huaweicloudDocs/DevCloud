@@ -15,8 +15,6 @@ JIRA平台和DevCloud平台都将工作项分为不同的类型，用于区分�
 
     ![](figures/JIRAProjectMigration_009_IssueType.png)
 
-      
-
 -   **DevCloud工作项类型**
 
     DevCloud的Scrum项目类型中采用的是标准的Scrum开发框架，工作项层级划分为Epic\>Feature\>Story\>Task&Bug。
@@ -111,15 +109,11 @@ JIRA平台和DevCloud平台中，不同类型的工作项可以有拥有属于�
 
     ![](figures/JIRAProjectMigration_011_BugWorkflow.png)
 
-      
-
 2.  **创建DevCloud工作流**
     1.  进入DevCloud已创建的项目，在“设置  \>  项目设置  \>  Bug设置  \>  状态流转  \>  状态管理“中，按照JIRA中故障的状态创建Bug类型工作项的状态。
     2.  在“流转方向“页签中按照JIRA中故障的状态流转方向设置Bug类型工作项的状态流转方向。
 
         ![](figures/JIRAProjectMigration_012_NewState.png)
-
-          
 
 
 
@@ -131,15 +125,11 @@ JIRA平台和DevCloud平台中，不同类型的工作项可以有拥有属于�
 
     ![](figures/JIRAProjectMigration_014_SrcModule.png)
 
-      
-
 2.  **创建DevCloud模块**
 
     进入DevCloud已创建的项目，在“设置  \>  项目设置  \>  模块设置“页面单击角“添加“，根据JIRA中的模块设置添加新模块和负责人。
 
     ![](figures/JIRAProjectMigration_015_DstModule.png)
-
-      
 
 
 ## **工作项内容迁移**<a name="section18743815154912"></a>
@@ -151,20 +141,16 @@ JIRA平台和DevCloud平台中，不同类型的工作项可以有拥有属于�
 
         ![](figures/JIRAProjectMigration_016_BacklogExport.png)
 
-          
-
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >若导出的CSV文件内容显示乱码，请参考以下步骤解决。  
-    >1.  用记事本打开CSV文件，选择另存为，编码格式由UTF-8更改为ANSI格式，保存。  
-    >2.  新建一个EXCEL空文件，在目录中选择“数据  \>  自文本“，选择刚更改完成编码格式的CSV文件，分隔符号设置（与保存时的分隔符相同）。  
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >若导出的CSV文件内容显示乱码，请参考以下步骤解决。
+    >1.  用记事本打开CSV文件，选择另存为，编码格式由UTF-8更改为ANSI格式，保存。
+    >2.  新建一个EXCEL空文件，在目录中选择“数据  \>  自文本“，选择刚更改完成编码格式的CSV文件，分隔符号设置（与保存时的分隔符相同）。
 
 2.  **导出DevCloud工作项模板**
 
     进入DevCloud已创建的项目，在“工作  \>  工作项“中，单击页面右上角“更多操作  \>  导入“，在弹框中单击“下载模板“。
 
     ![](figures/JIRAProjectMigration_017_DownloadTemp.png)
-
-      
 
 3.  **填充DevCloud工作项模板**
     1.  自定义DevCloud工作项字段
@@ -176,8 +162,6 @@ JIRA平台和DevCloud平台中，不同类型的工作项可以有拥有属于�
         新增字段后，在下载的模板中手动添加相应的字段列。
 
         ![](figures/JIRAProjectMigration_018_NewWord.png)
-
-          
 
     2.  定义工作项字段取值域
 
@@ -197,6 +181,4 @@ JIRA平台和DevCloud平台中，不同类型的工作项可以有拥有属于�
         在DevCloud平台中，找到子工作项，编辑“父工作项“字段，根据JIRA中记录的父子关系，选择相应的父工作项。
 
 
-
-  
 

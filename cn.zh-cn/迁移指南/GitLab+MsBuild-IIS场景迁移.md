@@ -101,21 +101,15 @@
 
         ![](figures/Jenkins_IIS_006.png)
 
-          
-
 
 -   **构建包迁移**
     1.  进入Jenkins待迁移任务，在“构建后操作“页面查看归档路径。
 
         ![](figures/Jenkins_IIS_008.png)
 
-          
-
     2.  返回DevCloud构建任务，编辑构建步骤“上传软件包到软件发布库“，根据Jenkins设置输入构建包路径，单击“保存“。
 
         ![](figures/Jenkins_IIS_009.png)
-
-          
 
     3.  单击“保存并执行“，任务构建成功后，在“构建&发布  \>  发布“页面可搜索到生成的构建包。
 
@@ -132,8 +126,8 @@
 2.  进入DevCloud项目，在“设置  \>  通用设置  \>  主机组管理“页面单击“新建主机组“，根据页面提示输入必要信息，单击“保存“。
 3.  单击“添加主机“，在弹窗中输入主机信息，单击“添加“保存。
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >部署主机中原有的IIS环境无需更改。  
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >部署主机中原有的IIS环境无需更改。
 
 
 ## **步骤四：IIS部署迁移**<a name="section234056161011"></a>
@@ -156,32 +150,22 @@ Jenkins部署任务设置主要通过脚本实现，本节案例中采用的脚�
 
             ![](figures/Jenkins_IIS_014.png)
 
-              
-
     -   **解压文件**：参考脚本中的配置，输入压缩文件路径与解压目录。
 
         ![](figures/Jenkins_IIS_015.png)
-
-          
 
     -   **删除文件**：删除路径与步骤“解压文件“中的“压缩文件路径“一致。
     -   **配置文件修改**：参考下图编辑配置文件的绝对路径。
 
         ![](figures/Jenkins_IIS_017.png)
 
-          
-
     -   **执行PowerShell脚本**：参考脚本中的配置，配置PowerShell脚本路径与脚本执行参数。
 
         ![](figures/Jenkins_IIS_018.png)
 
-          
-
     -   **执行PowerShell命令**：参考脚本中的配置，在PowerShell命令窗口中输入相应的命令。
 
         ![](figures/Jenkins_IIS_019.png)
-
-          
 
 
 

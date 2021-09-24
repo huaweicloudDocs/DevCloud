@@ -16,12 +16,10 @@
 
 ## **步骤二：创建DevCloud平台用户**<a name="section3424105011342"></a>
 
-1.  使用租户账号登录[DevCloud](https://devcloud.cn-north-4.huaweicloud.com/home)，单击右上角个人头像，在下拉菜单中选择“子账号管理“，进入统一身份认证服务。
-2.  单击右上角“创建用户“，依次填入用户个人信息，根据页面提示创建该租户账号下的IAM子账号。
+1.  使用租户帐号登录[DevCloud](https://devcloud.cn-north-4.huaweicloud.com/home)，单击右上角个人头像，在下拉菜单中选择“子账号管理“，进入统一身份认证服务。
+2.  单击右上角“创建用户“，依次填入用户个人信息，根据页面提示创建该租户帐号下的IAM子帐号。
 
     ![](figures/JIRAProjectMigration_002_IAM.png)
-
-      
 
 
 ## **步骤三：获取JIRA项目成员/角色**<a name="section135851954143413"></a>
@@ -32,15 +30,11 @@
 
     ![](figures/JIRAProjectMigration_003_Roles.png)
 
-      
-
 2.  获取项目角色拥有的权限：
 
     使用管理员账号登录JIRA平台，进入“问题  \>  权限方案“也面，查看项目对应的权限方案，方案中详细描述了各种角色拥有的操作权限。
 
     ![](figures/JIRAProjectMigration_004_Power.png)
-
-      
 
 
 ## **步骤四：创建DevCloud项目**<a name="section886460183511"></a>
@@ -49,14 +43,12 @@ DevCloud以项目为单位进行管理，新建项目分为两种类型：**Scru
 
 由于Scrum项目类型提供了更为丰富的项目设置功能，因此建议JIRA平台中的**Scrum开发方法**、**Kanban开发方法**等都迁移至DevCloud的Scrum项目类型。
 
-1.  使用华为云账号登录[DevCloud](https://devcloud.cn-north-4.huaweicloud.com/home)。
+1.  使用华为云帐号登录[DevCloud](https://devcloud.cn-north-4.huaweicloud.com/home)。
 2.  在面左上角根据您业务所在区域就近选择区域，可减少网络时延，提高访问速度；不同区域之间互不相通。
 
     例如您当前在北京，区域可以就近选择“华北-北京四“。
 
     ![](figures/JIRAProjectMigration_005_Control.png)
-
-      
 
 3.  单击“新建项目“，创建新的Scrum项目。
 
@@ -68,10 +60,8 @@ DevCloud以项目为单位进行管理，新建项目分为两种类型：**Scru
 
     ![](figures/JIRAProjectMigration_007_AddUser.png)
 
-      
-
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >当项目中的成员数量小于等于5人时，不收取费用；当超过5人后，需要购买套餐才可以继续使用，套餐请参见[产品价格详情](https://www.huaweicloud.com/pricing.html?tab=detail#/devcloud)。  
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >当项目中的成员数量小于等于5人时，不收取费用；当超过5人后，需要购买套餐才可以继续使用，套餐请参见[产品价格详情](https://www.huaweicloud.com/pricing.html?tab=detail#/devcloud)。
 
 
 ## **步骤五：为DevCloud项目成员设置角色**<a name="section1456011611358"></a>
@@ -85,6 +75,4 @@ DevCloud中的默认项目角色包括：项目创建者、项目经理、测试
 ![](figures/JIRAProjectMigration_008_NewRole.png)
 
 完成角色设置后，返回“设置  \>  通用设置  \>  成员管理“页面，参考[设置项目角色](https://support.huaweicloud.com/usermanual-projectman/devcloud_hlp_00026.html#section8)为每个项目成员设置角色。
-
-  
 

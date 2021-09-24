@@ -79,9 +79,9 @@
 
 ![](figures/Jenkins_Gradle_003.png)
 
->![](public_sys-resources/icon-note.gif) **说明：**   
->相较于HarBor镜像仓，华为云容器镜像服务（下文统称为SWR）具有操作简单、即开即用等特点，您可已根据实际场景需要，选择是否进行SWR迁移。如需对SWR了解更多，请参考[SWR帮助中心](https://support.huaweicloud.com/swr/index.html)。  
->若进行SWR迁移，上图中请填写对应SWR镜像仓信息。  
+>![](public_sys-resources/icon-note.gif) **说明：** 
+>相较于HarBor镜像仓，华为云容器镜像服务（下文统称为SWR）具有操作简单、即开即用等特点，您可已根据实际场景需要，选择是否进行SWR迁移。如需对SWR了解更多，请参考[SWR帮助中心](https://support.huaweicloud.com/swr/index.html)。
+>若进行SWR迁移，上图中请填写对应SWR镜像仓信息。
 
 ## **步骤三：Gradle构建迁移**<a name="section2795134119514"></a>
 
@@ -127,21 +127,15 @@
 
         ![](figures/Jenkins_Gradle_007.png)
 
-          
-
 
 -   **构建包迁移**
     1.  进入Jenkins待迁移任务，在“构建后操作“页面查看归档路径。
 
         ![](figures/Jenkins_Gradle_009.png)
 
-          
-
     2.  返回DevCloud构建任务，编辑构建步骤“上传软件包到软件发布库“，根据Jenkins设置输入**构建包路径**。
 
         ![](figures/Jenkins_Gradle_010.png)
-
-          
 
     3.  单击![](figures/icon-添加构建步骤.png)，添加步骤“上传软件包到软件发布库“，**构建包路径**输入“Dockerfile“，单击“保存“。
 
@@ -173,8 +167,6 @@
 
         ![](figures/Jenkins_Maven_004.png)
 
-          
-
     2.  进入DevCloud项目，在“设置  \>  通用设置  \>  主机组管理“页面单击“新建主机组“，根据页面提示输入必要信息，单击“保存“。
     3.  单击“添加主机“，在弹窗中根据Jenkins设置输入主机信息，单击“添加“保存。
 
@@ -183,21 +175,15 @@
 
         ![](figures/Jenkins_Gradle_011.png)
 
-          
-
     2.  在“General“页面查看参数设置。
 
         ![](figures/Jenkins_Gradle_019.png)
-
-          
 
     3.  进入DevCloud项目，在“构建&发布  \>  部署“页面单击“新建任务“，输入任务名称，单击“下一步“。
     4.  部署模板选择“Docker应用部署（Linux）“，单击“下一步“，系统将自动跳转至“部署步骤“页面。
     5.  选择“参数设置“页签，根据Jenkins配置添加参数。
 
         ![](figures/Jenkins_Gradle_020.png)
-
-          
 
     6.  选择“部署步骤“页签：
         -   **安装Docker**：选择前面创建的主机组，并根据需要选择在主机上安装的Docker版本。
@@ -207,23 +193,17 @@
 
             ![](figures/Jenkins_Gradle_018.png)
 
-              
-
         -   **镜像打标签**：参考Jenkins配置输入执行参数。
 
             ![](figures/Jenkins_Gradle_021.png)
-
-              
 
         -   **镜像上传到镜像仓**：参考Jenkins配置输入执行配置。
 
             ![](figures/Jenkins_Gradle_023.png)
 
-              
-
-            >![](public_sys-resources/icon-note.gif) **说明：**   
-            >部署步骤“镜像打标签“及“镜像上传到镜像仓“中所参考的Habor推送镜像配置如下：  
-            >![](figures/Jenkins_Gradle_022.png)  
+            >![](public_sys-resources/icon-note.gif) **说明：** 
+            >部署步骤“镜像打标签“及“镜像上传到镜像仓“中所参考的Habor推送镜像配置如下：
+            >![](figures/Jenkins_Gradle_022.png)
 
 
 
@@ -233,8 +213,6 @@
 1.  进入Jenkins待迁移任务，在“构建“页面查看“Execute shell script on remote host using ssh“版块中的命令行。
 
     ![](figures/Jenkins_Gradle_024.png)
-
-      
 
 2.  根据Jenkins配置，设置部署任务步骤。
     -   在步骤“镜像上传到镜像仓“后添加步骤“执行Docker命令“：
@@ -248,8 +226,6 @@
     -   编辑“步骤创建并启动容器“：参考Jenkins配置输入执行参数。
 
         ![](figures/Jenkins_Gradle_027.png)
-
-          
 
 
 

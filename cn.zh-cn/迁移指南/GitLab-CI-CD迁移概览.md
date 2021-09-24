@@ -10,9 +10,7 @@ GitLab CD指将验证过的软件推送到测试环境、类生产环境或者�
 
 ## **迁移前准备**<a name="section83924404172"></a>
 
--   **账号申请**：使用华为云软件开发平台DevCloud前，请确保您已拥有已实名认证的华为云账号；若您还没有华为云账号，请先进行注册，并完成实名认证。
+-   **帐号申请**：使用华为云软件开发平台DevCloud前，请确保您已拥有已实名认证的华为云帐号；若您还没有华为云帐号，请先进行注册，并完成实名认证。
 -   **DevCloud项目创建与代码托管**：参考[GitLab迁移至DevCloud](GitLab迁移至DevCloud.md)。
--   **购买弹性云服务器**：DevCloud部署将使用带有公网IP的云服务器，如果有可以不必购买。本文使用的是华为云ECS（CentOS 7.2），购买方式请参考[购买并登录Linux弹性云服务器](https://support.huaweicloud.com/qs-ecs/zh-cn_topic_0132727313.html)。
-
-  
+-   **购买弹性云服务器**：DevCloud部署将使用带有公网IP的云服务器，如果有可以不必购买。本文使用的是华为云ECS（CentOS 7.2），购买方式请参考[购买并登录Linux弹性云服务器](https://support.huaweicloud.com/basics-ecs/ecs_01_0103.html)。
 

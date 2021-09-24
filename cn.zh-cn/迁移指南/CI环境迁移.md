@@ -67,15 +67,11 @@ CI环境迁移包括以下两个步骤：
 
     ![](figures/GitLabCICDMigration_003_RunnerInfo.png)
 
-      
-
 3.  登录GitLab Runner服务器，进入Runner容器实例，在maven安装文件夹中通过命令**java -version**及**mvn --version**查看jdk及maven版本信息。
 
     本文案例使用的版本为：jdk1.8.0，maven3.5.3。
 
     ![](figures/GitLabCICDMigration_004_RunnerMaven.png)
-
-      
 
 
 ## **步骤二：创建DevCloud构建任务，完成云构建环境和工具版本选择**<a name="section58678201410"></a>
@@ -84,14 +80,12 @@ CI环境迁移包括以下两个步骤：
 2.  源码源选择“DevCloud“，源码仓库选择在CodeHub中创建的仓库，分支选择“master“，单击“下一步“。
 3.  构建模板选择“Maven“，单击“确定“，系统将自动跳转至“构建步骤“页面。
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >系统通常会根据工程代码的文件推荐合适的模板。  
-    >若推荐模板不适用，可在系统模板中选择需要使用的构建模板；或选择“不使用模板，直接创建“，根据需要选择并配置构建步骤。  
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >系统通常会根据工程代码的文件推荐合适的模板。
+    >若推荐模板不适用，可在系统模板中选择需要使用的构建模板；或选择“不使用模板，直接创建“，根据需要选择并配置构建步骤。
 
 4.  编辑构建步骤“Maven构建“：根据GitLab Runner中的配置，选择合适的**工具版本**，单击“新建“，完成任务创建。
 
     ![](figures/GitLabCICDMigration_008_DevcloudCIVersion.png)
-
-      
 
 

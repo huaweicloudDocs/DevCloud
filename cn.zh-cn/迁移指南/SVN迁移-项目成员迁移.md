@@ -27,45 +27,35 @@
 
     ![](figures/SVNRepoMigration_002.png)
 
-      
-
 2.  进入SVN服务器相应配置目录（本文为“/var/svnrepos/DevOpsOnDevCloud/conf“），查看authz文件，获取该SVN服务器下相应用户组权限设置信息。
 
     ![](figures/SVNRepoMigration_003.png)
 
-      
-
 
 ## **步骤二：创建项目**<a name="section149687147492"></a>
 
-1.  使用华为云账号登录[DevCloud](https://devcloud.cn-north-4.huaweicloud.com/home)。
+1.  使用华为云帐号登录[DevCloud](https://devcloud.cn-north-4.huaweicloud.com/home)。
 2.  在页面左上角根据您业务所在区域就近选择区域，可减少网络时延，提高访问速度；不同区域之间互不相通。
 
     例如您当前在北京，区域可以就近选择“华北-北京四“。
 
     ![](figures/SVNRepoMigration_004.png)
 
-      
-
 3.  单击页面右上角“新建项目“，创建新的项目。DevCloud支持Scrum和看板两种项目类型，建议选择看板项目。
 4.  项目创建成功后，会直接跳转到“成员管理“界面中添加成员。
 
-    -   如果“本企业用户“下已有需要添加的用户，直接勾选账号添加即可。
+    -   如果“本企业用户“下已有需要添加的用户，直接勾选帐号添加即可。
     -   如果还没有成员，则单击右上角“创建用户“跳转到统一身份认证服务IAM中，根据GitLab导出的用户进行创建。创建方法请参见[创建IAM用户](https://support.huaweicloud.com/usermanual-iam/iam_02_0001.html)。
 
     ![](figures/SVNRepoMigration_006.png)
-
-      
 
     也可以后续通过“设置  \>  通用设置  \>  成员管理“页面添加成员。
 
     ![](figures/SVNRepoMigration_007.png)
 
-      
-
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >-   当项目中的成员数量小于等于5人时，不收取费用；当超过5人后，需要购买套餐才可以继续使用，套餐请参见[产品价格详情](https://www.huaweicloud.com/pricing.html?tab=detail#/devcloud)。  
-    >-   新账号创建看板项目成功后，会看到弹框提示输入真实姓名，需完成此设置后才能添加项目成员。  
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >-   当项目中的成员数量小于等于5人时，不收取费用；当超过5人后，需要购买套餐才可以继续使用，套餐请参见[产品价格详情](https://www.huaweicloud.com/pricing.html?tab=detail#/devcloud)。
+    >-   新帐号创建看板项目成功后，会看到弹框提示输入真实姓名，需完成此设置后才能添加项目成员。
 
 
 ## **步骤三：为项目成员分配角色**<a name="section388293011259"></a>
@@ -119,8 +109,6 @@ SVN中通过设置User、Group来做权限管理，User对应DevCloud的项目�
 
     ![](figures/SVNRepoMigration_009.png)
 
-      
-
 4.  设置仓库角色：
 
     项目成员加入代码仓库时，项目角色与仓库角色的映射关系、以及三种仓库角色的操作权限请参考[代码托管-基础角色权限](https://support.huaweicloud.com/usermanual-codehub/codehub_hlp_0005.html#section0)。
@@ -129,6 +117,4 @@ SVN中通过设置User、Group来做权限管理，User对应DevCloud的项目�
 
     ![](figures/SVNRepoMigration_010.png)
 
-
-  
 

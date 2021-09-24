@@ -4,7 +4,7 @@
     -   [JIRA迁移概览](JIRA迁移概览.md)
     -   [项目成员迁移](JIRA迁移-项目成员迁移.md)
     -   [工作项迁移](JIRA迁移-工作项迁移.md)
-    -   [敏捷管理迁移](JIRA迁移-敏捷管理迁移.md)
+    -   [敏捷管理迁移](敏捷管理迁移.md)
 
 -   [MSP项目管理迁移至DevCloud](MSP项目管理迁移至DevCloud.md)
     -   [Microsoft Project迁移概览](Microsoft-Project迁移概览.md)
@@ -35,5 +35,4 @@
     -   [GitLab+Maven+Tomcat场景迁移](GitLab+Maven+Tomcat场景迁移.md)
     -   [SVN+Gradle+Docker场景迁移](SVN+Gradle+Docker场景迁移.md)
     -   [GitLab+MsBuild IIS场景迁移](GitLab+MsBuild-IIS场景迁移.md)
-
 

@@ -29,10 +29,8 @@
 
     ![](figures/GitLabRepoMigration_003_GitlabInfo.png)
 
-      
-
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >页面中暂未提供导出信息功能，需要手动对照GitLab的群组信息，录入到DevCloud。  
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >页面中暂未提供导出信息功能，需要手动对照GitLab的群组信息，录入到DevCloud。
 
 
 -   **方法二：通过API接口导出群组信息**
@@ -63,14 +61,12 @@ DevCloud以项目为单位进行管理，需要先在DevCloud创建项目，才�
 
 一个项目可以创建多个Git代码仓库，代码仓库安全级别较高，项目成员需要二次授权才能访问。
 
-1.  使用华为云账号登录[DevCloud](https://devcloud.cn-north-4.huaweicloud.com/home)。
+1.  使用华为云帐号登录[DevCloud](https://devcloud.cn-north-4.huaweicloud.com/home)。
 2.  在页面左上角根据您业务所在区域就近选择区域，可减少网络时延，提高访问速度；不同区域之间互不相通。
 
     例如您当前在北京，区域可以就近选择“华北-北京四“。
 
     ![](figures/GitLabRepoMigration_006_Control.png)
-
-      
 
 3.  单击页面右上角“新建项目“，创建新的项目。
 
@@ -78,16 +74,14 @@ DevCloud以项目为单位进行管理，需要先在DevCloud创建项目，才�
 
 4.  项目创建成功后，会直接跳转到“成员管理“界面中添加成员。
 
-    1.  如果“本企业用户“下已有需要添加的用户，直接勾选账号添加。
+    1.  如果“本企业用户“下已有需要添加的用户，直接勾选帐号添加。
     2.  如果还没有成员，则单击右上角“创建用户“跳转到统一身份认证服务IAM中，根据GitLab导出的用户进行创建。创建方法请参见[创建IAM用户](https://support.huaweicloud.com/usermanual-iam/iam_02_0001.html)。
 
     ![](figures/GitLabRepoMigration_008_AddUser.png)
 
-      
-
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >-   当项目中的成员数量小于等于5人时，不收取费用；当超过5人后，需要购买套餐才可以继续使用，套餐详情请参见[产品价格详情](https://www.huaweicloud.com/pricing.html?tab=detail#/devcloud)。  
-    >-   新账号创建看板项目成功后，会看到弹框提示输入真实姓名，需完成此设置后才能添加项目成员。  
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >-   当项目中的成员数量小于等于5人时，不收取费用；当超过5人后，需要购买套餐才可以继续使用，套餐详情请参见[产品价格详情](https://www.huaweicloud.com/pricing.html?tab=detail#/devcloud)。
+    >-   新帐号创建看板项目成功后，会看到弹框提示输入真实姓名，需完成此设置后才能添加项目成员。
 
 
 ## **步骤三：为项目成员分配角色**<a name="section1521517353269"></a>
@@ -143,11 +137,9 @@ GitLab中包含五种角色，分别为Owner、Master、Developer、Reporter、G
 
     ![](figures/GitLabRepoMigration_010_SyncRepo.png)
 
-      
-
 4.  设置仓库角色：
 
-    为了保障代码安全，代码托管服务有更进步一步的成员管理。代码托管提供三种角色：仓库管理员 、仓库普通成员、仓库浏览者。
+    为了保障代码安全，代码托管服务有更进一步的成员管理。代码托管提供三种角色：仓库管理员 、仓库普通成员、仓库浏览者。
 
     项目成员加入代码仓库时，项目角色与仓库角色的映射关系、以及三种仓库角色的操作权限请参考[代码托管-基础角色权限](https://support.huaweicloud.com/usermanual-codehub/codehub_hlp_0005.html#section0)。
 
@@ -155,6 +147,4 @@ GitLab中包含五种角色，分别为Owner、Master、Developer、Reporter、G
 
     ![](figures/GitLabRepoMigration_011_RepoRole.png)
 
-
-  
 
